@@ -3,7 +3,7 @@
   <input type="text" (input)="getPokemon($any($event.target).value)">
 
   <div class="card_title">
-    <h3>{{ pokemon.name }}</h3>
+    <h3>{{ pokemon.name | transformador: 'Gustavinho' : '123' }}</h3>
   </div>
   
   <div class="card_body">
